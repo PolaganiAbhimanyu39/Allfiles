@@ -1,0 +1,100 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Student</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: Student (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+</tr>
+<tr>
+  <td class="name">Student</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;interface Student
+&nbsp;{
+&nbsp;    int sno = 1;
+&nbsp;    String sname = &quot;ds&quot;;
+&nbsp;    void show();
+&nbsp;}
+&nbsp;interface Student1
+&nbsp;{
+&nbsp;    int m1 = 36;
+&nbsp;    int m2 = 56;
+&nbsp;    int m3 = 78;
+&nbsp;}
+&nbsp;public class StudentDemo implements  Student,Student1
+&nbsp;{
+&nbsp;       public void show()
+&nbsp;       {
+&nbsp;           System.out.println(&quot;Sno = &quot;+sno);
+&nbsp;           System.out.println(&quot;Sname = &quot;+sname);
+&nbsp;           System.out.println(&quot;m1 = &quot;+m1);
+&nbsp;           System.out.println(&quot;m2 = &quot;+m2);
+&nbsp;           System.out.println(&quot;m3 = &quot;+m3);
+&nbsp;           int total = m1+m2+m3;
+&nbsp;           float avg = total/3;
+&nbsp;           System.out.println(&quot;total = &quot;+total);
+&nbsp;           System.out.println(&quot;avgs = &quot;+avg);
+&nbsp;       }
+&nbsp;       public static void main(String[] args)
+&nbsp;       {
+&nbsp;           StudentDemo d = new StudentDemo();
+&nbsp;           d.show();
+&nbsp;       }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-11-22 18:46</div>
+</div>
+</body>
+</html>

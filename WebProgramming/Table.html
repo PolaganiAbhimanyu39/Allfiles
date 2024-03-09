@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><!--With ','(data selector) you can apply the same style info. to different parts of webpage
+    border: size nature color 
+    once, try removing the border-collapse attribute -->
+        <title>
+                Table
+        </title>
+        <style>
+            table{
+                border: 2px solid black;
+                border-collapse: collapse; 
+                margin: 10px;
+            }
+            td,th{
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <table>
+            <thead>
+                <tr>
+                    <th>Ocean</th>
+                    <th>Average depth</th>
+                    <th>Maximum Depth</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Pacific Ocean</td>
+                <td>4,280 m</td>
+                <td>10,220 m</td>
+            </tr>
+            <tr>
+                <td>Atlantic Ocean</td>
+                <td>3,280 m</td>
+                <td>8,220 m</td>
+            </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

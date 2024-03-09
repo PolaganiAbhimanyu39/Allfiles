@@ -1,0 +1,21 @@
+ {# - comment: {% %} - this syntax is used to specify to django here comes a condition #}
+ {#    we must write "{% endif %}" after the if block(includes not only if condition but else and elif conditions also) ends. " #}
+ {# Since, css is a static file(it's doesn't even if it's newyear or not font and it's properties will remain the same right.), we write the command {% load static%} to load them django makes optimizations for these static files #}
+ {# Observe that inside 'href' we've written {% static 'path' %} coz it's easier for django to figure out path #}
+ {% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Is it New Year ?
+        </title>
+        <link href="{% static 'NY/styles.css'%}" rel="stylesheet">
+    </head>
+    <body>
+        {% if val %}
+        <h1>YES</h1>
+        {% else %}
+        <h1>NO</h1>
+        {% endif %}
+    </body>
+</html>

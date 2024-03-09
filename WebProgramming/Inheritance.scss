@@ -1,0 +1,20 @@
+%message{ // '%' is used to specify a base class
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    border: 5px solid blue;
+    padding: 20px;
+    margin: 20px;
+}
+.success{
+    @extend %message;  // when you say '@extend' you're importing base code look at inheritance.css
+    background-color: green;
+}
+.warning{
+    @extend %message;
+    background-color: red;   
+}
+.error{
+    @extend %message;
+    background-color: yellow;   
+}

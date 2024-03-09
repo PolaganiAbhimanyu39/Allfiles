@@ -1,0 +1,93 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > demo</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: demo (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+</tr>
+  <tr>
+    <td class="name">demo$nest</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;class demo
+&nbsp;{
+&nbsp;    public interface nest
+&nbsp;    {
+&nbsp;        boolean isNotNegative(int num);
+&nbsp;    }
+&nbsp;}
+&nbsp;class demo1 implements demo.nest
+&nbsp;{
+&nbsp;   public boolean isNotNegative(int num)
+&nbsp;    {
+&nbsp;        return num &gt;= 0;
+&nbsp;    }
+&nbsp;}
+&nbsp;public class NestedInterfaceDemo {
+&nbsp;    public static void main(String[] args)
+&nbsp;    {
+&nbsp;        demo1 a = new demo1();
+&nbsp;        demo.nest b = a;
+&nbsp;        if(b.isNotNegative(-12)) System.out.println(&quot;You won&#39;t see this&quot;);
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-11-22 18:46</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Client</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">&lt;empty package name&gt;</a>
+</div>
+
+<h1>Coverage Summary for Class: Client (&lt;empty package name&gt;)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Client</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/6)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;class Demo implements Callback {
+&nbsp;    // Implement Callback&#39;s interface
+&nbsp;    public void callback(int p) // the methods that implement an interface must be declared public
+&nbsp;    {
+&nbsp;        System.out.println(&quot; callback called with &quot;+p);
+&nbsp;    }
+&nbsp;    void nonIfaceMeth()
+&nbsp;    {
+&nbsp;        System.out.println(&quot;Classes that implement interfaces &quot;+&quot;may also define other members, too.&quot;);
+&nbsp;    }
+&nbsp;}
+&nbsp;// Another implementation of callback
+&nbsp;class AnotherClient implements Callback{
+&nbsp;    // Implement callback&#39;s interface
+&nbsp;    public void callback(int p)
+&nbsp;    {
+&nbsp;        System.out.println(&quot;Another version of callback&quot;);
+&nbsp;        System.out.println(&quot;p squared is &quot;+(p*p));
+&nbsp;    }
+&nbsp;}
+<b class="nc">&nbsp;public class Client {</b>
+&nbsp;    public static void main(String[] args)
+&nbsp;    {
+<b class="nc">&nbsp;        Callback c = new Demo();</b>
+<b class="nc">&nbsp;        c.callback(23);</b>
+<b class="nc">&nbsp;        AnotherClient a = new AnotherClient();</b>
+<b class="nc">&nbsp;        c = a;</b>
+<b class="nc">&nbsp;        c.callback(33);</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-11-22 18:46</div>
+</div>
+</body>
+</html>

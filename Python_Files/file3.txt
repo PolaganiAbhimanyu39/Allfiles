@@ -1,0 +1,6 @@
+This is the content from file1.
+Hello there.
+welcome to programming.
+This is the content from file2.
+Python is a programming language.
+Good bye...
